@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b0d7aa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0d7aa"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ContactUsActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#54604d" />
+
+        <EditText
+            android:id="@+id/edit_text_to"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:text="vlad.kazandzhy@gmail.com"
+            android:textColor="#54604d" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add new gift idea or a subject:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#54604d" />
+
+        <EditText
+            android:id="@+id/edit_text_subject"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:inputType="textEmailSubject"
+            android:paddingLeft="10dp"
+            android:textColor="#54604d" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Message:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#54604d" />
+
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:paddingLeft="10dp"
+            android:textColor="#54604d" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="send"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>
